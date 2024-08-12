@@ -5,6 +5,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.text.Font;
 import javafx.util.Duration;
 
 import java.time.LocalDate;
@@ -26,13 +27,17 @@ public class HelloController {
     private DateTimeFormatter formatoFecha=DateTimeFormatter.ofPattern("dd/MM");
 
     public void initialize() {
+        Font customFont = Font.loadFont(getClass().getResourceAsStream("Cattie-Regular.ttf"),80);
         Timeline lineaTiempo = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
             LocalTime tiempoActual = LocalTime.now();
             LocalDate fechaActual=LocalDate.now();
             relojLabel.setText(tiempoActual.format(formatoHora));
+            relojLabel.setFont(customFont);
             fechaLabel.setText(fechaActual.format(formatoFecha));
+//            fechaLabel.setFont(customFont);
             String diasemanal=fechaActual.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
             diaSemanaLabel.setText(diasemanal);
+//            diaSemanaLabel.setFont(customFont);
         }));
 
         lineaTiempo.setCycleCount(Animation.INDEFINITE);
