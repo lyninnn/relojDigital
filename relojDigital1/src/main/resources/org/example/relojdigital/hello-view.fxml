@@ -14,14 +14,14 @@
             <font>
                <Font name="System Bold" size="69.0"/>
             </font></Label>
-             <Label fx:id="fechaLabel" layoutX="56.0" layoutY="151.0" prefHeight="35.0" prefWidth="231.0">
+             <Label fx:id="fechaLabel" layoutX="120.0" layoutY="151.0" prefHeight="35.0" prefWidth="231.0">
                <font>
-                  <Font size="40.0" />
+                  <Font name="System Bold" size="40.0" />
                </font>
             </Label>
-             <Label fx:id="diaSemanaLabel" layoutX="335.0" layoutY="151.0" prefHeight="35.0" prefWidth="265.0">
+             <Label fx:id="diaSemanaLabel" layoutX="300.0" layoutY="151.0" prefHeight="35.0" prefWidth="231.0">
                <font>
-                  <Font name="System Bold" size="60.0"/>
+                  <Font name="System Bold" size="40.0"/>
                </font>
             </Label>
          </Pane>
