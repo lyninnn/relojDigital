@@ -36,6 +36,7 @@ public class HelloController {
             fechaLabel.setText(fechaActual.format(formatoFecha));
 //            fechaLabel.setFont(customFont);
             String diasemanal=fechaActual.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
+            diasemanal=diasemanal.toUpperCase().substring(0,1)+diasemanal.substring(1);
             diaSemanaLabel.setText(diasemanal);
 //            diaSemanaLabel.setFont(customFont);
         }));
