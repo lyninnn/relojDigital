@@ -27,7 +27,14 @@ public class HelloController {
     private DateTimeFormatter formatoFecha=DateTimeFormatter.ofPattern("dd/MM");
 
     public void initialize() {
-        Font customFont = Font.loadFont(getClass().getResourceAsStream("Cattie-Regular.ttf"),80);
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Cattie-Regular.ttf"),80);
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Cute Meow.otf"),80);
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Churli_cute5.ttf"),80);
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("DEMON SKER.ttf"),80);???
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Ghastly Panic.ttf"),80);??
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Minecraft Evenings.ttf"),80);
+//        Font customFont = Font.loadFont(getClass().getResourceAsStream("Poxel-font.ttf"),80);
+        Font customFont = Font.loadFont(getClass().getResourceAsStream("Scary Dolls.ttf"),80);
         Timeline lineaTiempo = new Timeline(new KeyFrame(Duration.seconds(1), event -> {
             LocalTime tiempoActual = LocalTime.now();
             LocalDate fechaActual=LocalDate.now();
